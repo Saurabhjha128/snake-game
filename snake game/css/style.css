@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Smokum&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+.body{
+    background:url(../jpg1.jpeg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#scoreBox{
+    position :absolute;
+    top:79px;
+    right:149px;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: 'Smokum', cursive;
+}
+
+#hiscoreBox{
+    position :absolute;
+    top:39px;
+    right:200px;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: 'Smokum', cursive;
+}
+#board{
+    background: linear-gradient(rgb(178, 234, 178),rgb(223, 223, 191));
+    width: 90vmin;
+    height: 92vmin;
+    border: 10px solid black;
+    display: grid;
+    grid-template-rows: repeat(20,1fr);
+    grid-template-columns: repeat(20,1fr);
+
+
+}
+
+.head{
+   
+    background:url(../jpg3.png);
+    min-height: 3;
+    background-size: 2.7vw 4.5vh;
+    background-repeat: no-repeat;
+    border:2px solid dark black;
+    transform:scale(1.02);
+    border-radius: 15px;
+}
+
+.snake{
+    background-color: purple;
+    border:.25vmin solid white;
+    border-radius: 12px;
+
+
+}
+.food{
+    background: linear-gradient(red,purple);
+    border:.25vmin solid black;
+    border-radius: 8px;
+
+}
